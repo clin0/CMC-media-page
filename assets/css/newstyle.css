@@ -1,0 +1,580 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header-section */
+.header-section {
+  padding: 19px 0;
+  background: #213951;
+  position: relative;
+  z-index: 4;
+}
+.header-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo span {
+  margin-left: 12px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  font-family: "Tofino Personal";
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.main-menu li {
+  margin-left: 50px;
+  list-style-type: none;
+}
+.main-menu li a {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Tofino Personal";
+  transition: 0.3s;
+  text-decoration: none;
+}
+.main-menu li:not(.active) a:hover {
+  color: #ff981b;
+}
+.main-menu li.active a {
+  background-color: #fea63c;
+  border-radius: 0px;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Tofino Personal";
+  color: #fff;
+  border: none;
+  display: inline-block;
+  line-height: 1;
+  transition: 0.3s;
+}
+.main-menu li.active a:hover {
+  background: #ff981b;
+}
+.offcanvas-open {
+  color: #fff;
+  font-size: 22px;
+  transition: 0.3s;
+}
+.offcanvas-open:hover {
+  color: #ff981b;
+}
+.header-section[style*="fixed"] {
+
+  padding-top: 25px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+
+       box-shadow: 0 8px 6px -6px black;
+       width: 100%;
+       z-index: 5;
+}
+
+
+/* offcanvas-css */
+.offcanvas-open {
+  font-size: 22px;
+  transition: 0.3s;
+}
+.offcanvas-open:hover {
+  color: #97a3ae;
+}
+.offcanvas-close {
+  color: var(--theme__color1);
+  position: absolute;
+  transition: 0.3s;
+  right: 25px;
+  top: 25px;
+}
+.offcanvas-close:hover {
+  color: #d1c3b2;
+}
+.offcanvas-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translateX(-105%);
+  transition: 0.3s;
+}
+.offcanvas-menu.active {
+  transform: translate(0);
+}
+.offcanvas-menu .offmenu {
+  max-width: 250px;
+  min-width: 200px;
+  z-index: 5;
+  position: relative;
+  background: #213951;
+  height: 100%;
+  padding: 80px 20px 40px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.offcanvas-menu .offmenu :-webkit-scrollbar {
+  display: none;
+}
+.offcanvas-menu ul li a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #feedd8;
+  padding: 10px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.offcanvas-menu ul li a:hover {
+  color: #fdc989;
+}
+.dropdown-menu-custom ul {
+  background: #fff;
+  padding: 20px 0;
+}
+.dropdown-menu-custom ul li a {
+  color: #97a3ae;
+  text-decoration: none;
+}
+.offcanvas-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.178);
+  z-index: 2;
+  transform: 0;
+  z-index: 900;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.offcanvas-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cm_darkblack {
+  background-color: #4d6073;
+}
+
+.sponsersSection_wrapper .sponsersSection .row img {
+  max-width: 250px;
+}
+
+.video-sec {
+  background: #ffffff;
+  padding: 100px 0 0 0;
+}
+.video-sec video {
+  width: 100%;
+  cursor: pointer;
+}
+
+.video-sec .wrapper {
+  display: table;
+  width: auto;
+  position: relative;
+  width: 100%;
+}
+.video-sec .wrapper .playpause {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid #f18b0e;
+  border-bottom: 50px solid transparent;
+  cursor: pointer;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+}
+.video-sec .wrapper .playpausec {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid #f18b0e;
+  border-bottom: 50px solid transparent;
+  cursor: pointer;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+}
+
+table.table.bg-white.rounded-1 {
+  padding-top: 15px;
+  padding-bottom: 2px;
+}
+.table > :not(caption) > * > * {
+  padding: 0;
+}
+.container-fuild.cm_yellow.scheduleSection {
+  padding-top: 150px;
+}
+.container-fuild.cm_yellow.scheduleSection td {
+  text-align: center;
+  padding-bottom: 11px;
+}
+tr.head_tr,
+tr.table_heading,
+.table > :not(caption) > * > * {
+  border: none;
+}
+.border-div {
+  border: 1px solid red;
+}
+th.cm_darknewgray.text-center.cm_font_white.cm_font_18.cm_font_tofino.tue_67.first {
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+th.cm_darknewgray.text-center.cm_font_white.cm_font_18.cm_font_tofino.tue_67.second {
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+td.text-center.pb-5.Joint_Opening_Session.pt-5.cm_blue.cm_font_tofino_personal.cm_font_14.cm_font_500.text-white,
+td.text-center.pt-4.cm_darkgray.cm_font_tofino_personal.cm_font_14.cm_font_500.cm_fontnavy,
+td.pb-5.center_td.pt-5.text-center.cm_newgray.cm_font_tofino_personal.cm_font_14.cm_font_500.cm_fontnavy {
+  border-left: 1px solid #ffffff;
+}
+td.pb-4.pt-4.text-center.cm_lightyellow.cm_font_tofino_personal.cm_font_14.cm_font_500.cm_fontnavy,
+td.pb-5.center_td.pt-5.text-center.cm_newgray.cm_font_tofino_personal.cm_font_14.cm_font_500.cm_fontnavy.second,
+td.text-center.pb-4.pt-4.cm_blue.cm_font_tofino_personal.cm_font_14.cm_font_500.text-white {
+  border-right: 1px solid #ffffff;
+}
+td.text-center.pb-4.pt-4.cm_blue.cm_font_tofino_personal.cm_font_14.cm_font_500.text-white,
+td.text-center.pt-4.pb-4.cm_orange.cm_font_tofino_personal.cm_font_14.cm_font_500.cm_fontnavy.bottom,
+td.text-center.pt-4.pb-4.cm_lightgray.cm_font_tofino_personal.cm_font_14.cm_font_500.cm_fontnavy.bottom,
+td.text-center.pt-4.pb-4.cm_lightyellow.cm_font_tofino_personal.cm_font_14.cm_font_500.cm_fontnavy.bottom {
+  border-bottom: 1px solid #ffffff;
+}
+.panel-dis1 {
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: -2px !important;
+}
+/* =================header-css========== */
+.header-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  padding: 33px 0px;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-area a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo-area a:hover {
+  text-decoration: none;
+}
+.logo-area a h5 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 16px;
+  font-family: "Tofino Personal";
+  margin-bottom: 0;
+}
+.header-info h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Tofino Personal";
+  margin-bottom: 0;
+}
+.header-info h4 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 18px;
+  letter-spacing: 0.5px;
+  font-family: "Tofino Personal";
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right .calender {
+  margin-right: 4px;
+}
+.header-right h4 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Tofino Personal";
+  margin-bottom: 0;
+}
+.header-right h4 span {
+  position: relative;
+  top: -2px;
+}
+.shadow-text {
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+}
+/* =================header-css========== */
+/*Media Page Banner Css */
+section.banner-sec {
+  background: url(../images/media.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position: center center;
+  width: 100%;
+  height: 100%;
+  min-height: 301px;
+  position: relative;
+}
+section.banner-sec .heading {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+section.banner-sec .heading h3 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Tofino-Personal;
+  font-size: 36px;
+  font-weight: bold;
+ word-break: break-word;
+  color: #fff;
+}
+section.banner-sec .heading h3 span {
+  display: block;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 1px;
+ text-align: center;
+}
+/* Media page Promotion video Css */
+h4.heading {
+  font-family: Tofino-Personal;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #272727;
+  margin-bottom: 25px;
+  word-break: break-word;
+}
+p.sub-heading {
+  font-family: Tofino-Personal;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #000;
+  word-break: break-word;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+a.download {
+  font-family: Tofino-Personal;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #e8a000;
+
+}
+section.promo-video {
+  background: #ffffff;
+  width: 100%;
+  padding: 100px 0 130px 0;
+}
+section.promo-video .video-sec {
+  padding: 0;
+  
+}
+
+/* Media page Posters Css */
+section.poster-sec {
+  padding: 0 0 130px 0;
+}
+/* Media Page Logo Css */
+.logo-sec {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.logo-sec .logos {
+  margin-right: 40px;
+}
+.logo-sec .logos:last-of-type {
+  margin-right: 0;
+}
+.logo-sec .logos img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+.poster img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .header-info h2 {
+    font-size: 26px;
+  }
+  .header-info h4 {
+    font-size: 20px;
+  }
+  .header-right h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-info h2 {
+    font-size: 20px;
+  }
+  .header-info h4 {
+    font-size: 17px;
+  }
+  .logo-area a h5 {
+    font-size: 17px;
+    margin-left: 12px;
+  }
+  .header-right h4 {
+    font-size: 16px;
+  }
+  .header-right h4 span {
+    top: -4px;
+  }
+  .header-right h4 span img {
+    max-width: 20px;
+  }
+  .logo-sec .logos img {
+    object-fit: contain;
+  }
+  .poster img {
+    width: 100%;
+    height: 170px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-area {
+    padding: 18px 0px;
+  }
+  .poster img {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-flex {
+    flex-direction: column;
+  }
+  .logo-area,
+  .header-right {
+    margin-bottom: 10px;
+  }
+  .header-info {
+    display: flex;
+    order: 3;
+  }
+
+  .video-sec {
+    padding: 50px 0 0 0;
+  }
+  .video-sec .wrapper .playpause {
+    border-top: 25px solid transparent;
+    border-left: 50px solid #f18b0e;
+    border-bottom: 25px solid transparent;
+  }
+  .video-sec .wrapper .playpausec {
+    border-top: 25px solid transparent;
+    border-left: 50px solid #f18b0e;
+    border-bottom: 25px solid transparent;
+  }
+  .sponsersSection_wrapper .sponsor_church {
+    margin-top: 50px;
+  }
+  .cm_font_blue {
+    margin-left: 0;
+  }
+  section.banner-sec .heading h3 {
+    font-size: 20px;
+
+  }
+  section.banner-sec .heading h3 span {
+    font-size: 28px;
+  }
+  section.promo-video {
+    padding: 50px 0 20px 0;
+  }
+  section.poster-sec {
+    padding: 0 0 20px 0;
+  }
+  a.download {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .logo-sec {
+   
+    flex-direction: column;
+  }
+  .logo-sec .logos {
+    margin-right: 0;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 475px) {
+  .logo-area a img {
+    max-width: 35px;
+  }
+  .logo-area a h5 {
+    font-size: 14px;
+    margin-left: 6px;
+  }
+  .header-right h4 {
+    font-size: 11px;
+  }
+  .header-info h2 {
+    font-size: 19px;
+  }
+  .header-info h4 {
+    font-size: 15px;
+  }
+}
